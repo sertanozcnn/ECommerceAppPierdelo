@@ -1,2 +1,1 @@
-
-<img src="https://giphy.com/gifs/xpsIb1WpDpZLSnooV3/fullscreen" width="128"/>
+https://github.com/sertanozcnn/ECommerceAppPierdelo/assets/90261603/a424a67f-9117-4052-8378-0ce37affda15
