@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "317592822731",
+    "project_id": "pierdeloapp",
+    "storage_bucket": "pierdeloapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317592822731:android:8201eeba00b4f6a863cc4e",
+        "android_client_info": {
+          "package_name": "com.example.pierdeloapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuylxKnpNbhWxhkpwdfLX5l6WnrqyDcfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

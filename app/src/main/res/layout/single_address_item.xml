@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            app:strokeWidth="0.5dp"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+
+                >
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/xml_my_home_name"
+                        android:textSize="14sp"
+                        android:layout_weight="6"
+                        android:textColor="#8992A3"
+                        android:fontFamily="@font/nunito_semibold"
+                        />
+
+                    <ImageView
+                        android:id="@+id/remove_card"
+                        android:layout_width="5dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:src="@drawable/delete_button_card" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="2dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/card_city"
+                        android:layout_gravity="start"
+                        />
+
+                    <TextView
+                        android:id="@+id/address_cityName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="İstanbul"
+                        android:textColor="#57636F"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/card_location"
+                        android:layout_gravity="start"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/address_locationName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Ortabayır Mah. Talatpaşa Cad."
+                        android:textColor="#57636F"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear3"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/card_user"
+                        android:layout_gravity="start"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/address_userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="John Doe"
+                        android:textColor="#57636F"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear4"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/card_number"
+                        android:layout_gravity="start"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/address_userPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="555 4444 5151"
+                        android:textColor="#57636F"
+                        android:layout_weight="5"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/select_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#F1682A"
+                        />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    
+
+
+</LinearLayout>

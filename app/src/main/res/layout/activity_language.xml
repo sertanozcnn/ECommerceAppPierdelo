@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LanguageActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        />
+
+
+
+        <Button
+            android:layout_below="@id/include"
+            android:id="@+id/rb_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:textColor="@color/appColor"
+            android:textSize="18sp"
+            android:fontFamily="@font/nunito_bold"
+            android:buttonTint="@color/appColor"
+            android:background="@drawable/linear_bg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            />
+
+        <Button
+            android:layout_below="@id/rb_english"
+            android:id="@+id/rb_turkish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turkish"
+            android:textColor="@color/appColor"
+            android:textSize="18sp"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/linear_bg"
+            />
+
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_one_bg"
+        android:elevation="10dp"
+        app:itemIconSize="28dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="786dp" />
+
+
+
+</RelativeLayout>

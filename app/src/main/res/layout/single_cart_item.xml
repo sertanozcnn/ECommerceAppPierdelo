@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    >
+
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:id="@+id/cardView"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/linearCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            >
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/cart_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/category_photo" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/relative_content"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/card_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Triko Top"
+                        android:textColor="#57636F"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/card_desc"
+                        android:layout_below="@id/card_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beden : M"
+                        android:textColor="#57636F"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/card_price"
+                        android:layout_below="@id/card_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="339,90 ₺"
+                        android:textColor="#57636F"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textSize="20sp"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/button_linear"
+                        android:layout_below="@id/card_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+
+
+                        <Button
+                            android:id="@+id/buttonDecrease"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/button_in_dec"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="-"
+                            android:textColor="#57636F"
+                            android:textSize="14sp"
+
+                            />
+
+                        <Button
+                            android:id="@+id/buttonValue"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/button_in_dec"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="1"
+                            android:textColor="#57636F"
+                            android:textSize="14sp"
+                            />
+
+
+                        <Button
+                            android:id="@+id/buttonIncrease"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/button_in_dec"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="+"
+                            android:textColor="#57636F"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/viewOne"
+                        android:layout_below="@id/button_linear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#E3E8F1" />
+
+                    <LinearLayout
+                        android:layout_below="@id/viewOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/viewOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/xml_total_amount"
+                            android:textColor="#57636F"
+                            android:fontFamily="@font/nunito_bold"
+                            android:textSize="16sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/card_all_price"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/viewOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="459,95 ₺"
+                            android:textColor="#F1682A"
+                            android:fontFamily="@font/nunito_bold"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            />
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/remove_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/delete_button_card"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</LinearLayout>

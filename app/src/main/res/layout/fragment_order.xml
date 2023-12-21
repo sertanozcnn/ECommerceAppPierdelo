@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.OrderFragment"
+    android:background="#F4F4F4"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/xml_empty_name"
+            android:textColor="#8992A3"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="@string/xml_no_order_name"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView7"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/fragment_image" />
+
+        <Button
+            android:id="@+id/button_password_change"
+            android:background="@drawable/main_button"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/xml_start_shopping"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+
+
+</FrameLayout>

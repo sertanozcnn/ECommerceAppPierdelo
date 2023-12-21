@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardActivity"
+    android:background="#F6F6F7"
+    >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeBottom"
+        android:layout_below="@id/include"
+        android:layout_marginTop="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeBottom"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/detail_bg_bar"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/xml_amount_text"
+                android:textColor="#7A8D9C"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="17sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/total_amount"
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="689,95 ₺"
+                android:textColor="#F1682A"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                />
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_below="@id/linear"
+            android:id="@+id/item_add_cart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/main_button"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="@string/xml_complete_shop_text"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nunito_bold"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

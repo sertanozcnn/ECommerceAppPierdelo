@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentMethodActivity"
+    android:background="#F4F4F4"
+
+    >
+
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_below="@id/include"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/xml_no_payment_name"
+            android:textColor="#8992A3"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="@string/xml_new_payment_name"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView7"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/payment_image" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        >
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_above="@+id/bottomNavigationView"
+            android:layout_marginBottom="0dp"
+            android:background="@color/white"
+            android:padding="20dp"
+            >
+
+            <TextView
+                android:id="@+id/textViewHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xml_new_add_payment"
+                android:textColor="#222B45"
+                android:textSize="17sp"
+                android:fontFamily="@font/nunito_semibold" />
+
+            <EditText
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:drawableStart="@drawable/payment_edit_icon"
+                android:layout_height="55dp"
+                android:layout_below="@id/textViewHead"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_edittext"
+                android:fontFamily="@font/nunito_bold"
+                android:inputType="text"
+                android:hint="Master Card"
+                android:enabled="false"
+                android:drawableEnd="@drawable/arrow_down"
+                android:paddingEnd="15dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/card_number"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@id/card"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_edittext"
+                android:fontFamily="@font/nunito_bold"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:hint="@string/xml_card_number_name"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_number"
+                android:id="@+id/linear1"
+                >
+
+                <EditText
+                    android:id="@+id/card_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/card_number"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/main_edittext"
+                    android:fontFamily="@font/nunito_bold"
+                    android:inputType="text"
+                    android:paddingStart="20dp"
+                    android:hint="@string/xml_month_year"
+                    android:drawableEnd="@drawable/arrow_down"
+                    android:paddingEnd="15dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/card_cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/card_number"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/main_edittext"
+                    android:fontFamily="@font/nunito_bold"
+                    android:inputType="text"
+                    android:paddingStart="20dp"
+                    android:hint="CVV"
+
+                    android:textSize="16sp" />
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/ad_add_address"
+                android:background="@drawable/main_button"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/xml_add_cart_name"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_below="@id/linear1"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_one_bg"
+        android:elevation="10dp"
+        app:itemIconSize="28dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="786dp" />
+
+
+</RelativeLayout>

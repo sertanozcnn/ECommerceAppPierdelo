@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAddressActivity" android:background="#F4F4F4"
+    >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/include"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:layout_below="@id/include"
+        android:layout_marginBottom="0dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/xml_name"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="14sp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:id="@+id/ad_city"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/main_edittext"
+            android:fontFamily="@font/nunito_bold"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/xml_address"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="14sp"
+            android:layout_below="@id/ad_city"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/ad_address"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_below="@id/textView3"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/main_edittext"
+            android:fontFamily="@font/nunito_bold"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textSize="16sp"
+
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/xml_receiver_name"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="14sp"
+            android:layout_below="@id/ad_address"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/ad_name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_below="@id/textView4"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/main_edittext"
+            android:fontFamily="@font/nunito_bold"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/xml_phone"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="14sp"
+            android:layout_below="@id/ad_name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/ad_phone"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/textView5"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/main_edittext"
+            android:fontFamily="@font/nunito_bold"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/ad_add_address"
+            android:background="@drawable/main_button"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/xml_button_add"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_below="@id/ad_phone"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:elevation="10dp"
+        android:indeterminateTint="#707070"
+        android:visibility="gone" />
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_one_bg"
+        android:elevation="10dp"
+        app:itemIconSize="28dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="786dp" />
+
+
+</RelativeLayout>

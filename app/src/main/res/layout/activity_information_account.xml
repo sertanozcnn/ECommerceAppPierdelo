@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformationAccountActivity"
+    android:background="#F4F4F4"
+    >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:layout_below="@id/include"
+        android:layout_marginBottom="0dp"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/xml_name_surname"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/edittextName"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/main_edittext"
+            android:enabled="false"
+            android:fontFamily="@font/nunito_bold"
+            android:hint="@string/xml_your_name"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/xml_email_address"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="14sp"
+            android:layout_below="@id/edittextName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:id="@+id/edittextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:layout_below="@id/textView3"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/main_edittext"
+            android:fontFamily="@font/nunito_bold"
+            android:hint="@string/xml_your_email"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textSize="16sp"
+            android:enabled="false"
+            />
+
+
+        <Button
+            android:id="@+id/button_password_change"
+            android:background="@drawable/main_button"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/xml_pass_change_name"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_below="@id/edittextEmail"
+           />
+
+        <Button
+            android:id="@+id/button_update_email_information"
+            android:background="@drawable/main_button"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/xml_update_email_name"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_below="@id/button_password_change"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:indeterminateTint="#707070"
+        android:elevation="10dp"
+        android:visibility="gone"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_one_bg"
+        android:elevation="10dp"
+        app:itemIconSize="28dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="786dp" />
+
+
+</RelativeLayout>

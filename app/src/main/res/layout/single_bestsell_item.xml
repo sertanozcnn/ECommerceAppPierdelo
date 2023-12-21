@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:id="@+id/bs_img"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/category_photo" />
+
+
+    </androidx.cardview.widget.CardView>
+
+  <RelativeLayout
+      android:id="@+id/rl"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/bs_clothes"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Erkek Giyim"
+          android:gravity="center"
+          android:layout_marginTop="10dp"
+          android:textSize="15sp"
+          android:fontFamily="@font/nunito_semibold"
+          android:textColor="#8992A3" />
+
+      <TextView
+          android:id="@+id/bs_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Cepli Yelek"
+          android:gravity="center"
+          android:layout_marginTop="5dp"
+          android:textSize="20sp"
+          android:layout_below="@id/bs_clothes"
+          android:fontFamily="@font/nunito_bold"
+          android:textColor="#57636F" />
+
+
+      <TextView
+          android:id="@+id/bs_cost"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="295₺"
+          android:fontFamily="@font/nunito_semibold"
+          android:layout_marginTop="5dp"
+          android:layout_below="@id/bs_name"
+          android:textColor="#57636F"
+          android:textSize="18sp"
+          />
+
+
+
+  </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/shopping_icon" />
+
+        <TextView
+            android:id="@+id/shopping_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="4.6k"
+            android:textColor="#222B45"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/views_icon"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:id="@+id/see_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="4.6k"
+            android:textColor="#222B45"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

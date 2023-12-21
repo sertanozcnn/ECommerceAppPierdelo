@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        />
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:src="@drawable/details_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:background="@drawable/detail_bg_bar"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="20dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/slide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/detail_slide_up"
+            />
+
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BALON KOLLU TRİKO TOP"
+            android:textSize="16sp"
+            android:textColor="#57636F"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginTop="25dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            >
+
+            <RatingBar
+                android:id="@+id/item_rating"
+                android:numStars="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize="0.5"
+                android:rating="3"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:progressTint="#FBBA32"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                />
+
+
+            <TextView
+                android:id="@+id/item_rat_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="4.5"
+                android:textColor="#7A8D9C"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="435.0 ₺"
+                android:textColor="#57636F"
+                android:textSize="20sp"
+                android:layout_marginLeft="150dp"
+                android:layout_weight="3"
+                android:gravity="end"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/xml_product_detail"
+                android:textColor="#7A8D9C"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Yeşil renkli beyaz polar"
+                android:textColor="#7A8D9C"
+                android:layout_marginLeft="85dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/beden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/xml_body_name"
+                android:textColor="#7A8D9C"
+                android:textSize="14sp"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/buttonSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/detail_button_one"
+                android:fontFamily="@font/nunito_bold"
+                android:text="S"
+                android:textColor="#57636F"
+                android:textSize="12sp"
+                android:layout_marginLeft="125dp"
+
+                />
+
+            <Button
+                android:id="@+id/buttonMedium"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/detail_button_two"
+                android:fontFamily="@font/nunito_bold"
+                android:text="M"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Button
+                android:id="@+id/buttonLarge"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/detail_button_one"
+                android:fontFamily="@font/nunito_bold"
+                android:text="L"
+                android:textColor="#57636F"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Button
+                android:id="@+id/buttonXLarge"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/detail_button_one"
+                android:fontFamily="@font/nunito_bold"
+                android:text="XL"
+                android:textColor="#57636F"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/adet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/xml_select_name"
+                android:textColor="#7A8D9C"
+                android:textSize="14sp"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/buttonDecrease"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/detail_button_one"
+                android:fontFamily="@font/nunito_bold"
+                android:text="-"
+                android:textColor="#57636F"
+                android:textSize="14sp"
+                android:layout_marginLeft="85dp"
+                />
+
+            <Button
+                android:id="@+id/buttonNumberDecIn"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="@drawable/detail_button_one"
+                android:fontFamily="@font/nunito_bold"
+                android:text="1"
+                android:textColor="#57636F"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                />
+
+
+            <Button
+                android:id="@+id/buttonIncrease"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/detail_button_one"
+                android:fontFamily="@font/nunito_bold"
+                android:text="+"
+                android:textColor="#57636F"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:id="@+id/item_add_cart"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/main_button"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="@string/xml_add_basket"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_bold"
+                />
+
+            <Button
+                android:id="@+id/item_buy_now"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/main_button"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="@string/xml_buy_name"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
